@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Pham - Portfolio</title>
+    <title>Contact Kevin Pham</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Kevin Pham</h1>
-        <p>Data Scientist | Software Engineer | Mathematician</p>
+        <h1>Contact Kevin Pham</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,10 +19,20 @@
         </nav>
     </header>
 
-    <section class="intro">
-        <h2>Welcome to my Portfolio</h2>
-        <p>I'm Kevin Pham, a passionate data engineer/analyst/scientist and software engineer. Explore my work and projects!</p>
-        <a href="projects.html" class="cta-button">See My Work</a>
+    <section class="contact">
+        <h2>Get In Touch</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
